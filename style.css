@@ -1,0 +1,583 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto, 1fr);}
+
+p, h1, h2, h3{
+    margin:0;
+    padding: 0;
+    }
+  
+    
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+}
+/*===================== Top Menu =========================*/
+.top_menu{
+    background: black;
+    color: white;
+   justify-content: center;
+       
+}
+
+.logo{
+    grid-column: auto/span 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.icon_country{
+    grid-column: auto/span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.icon_country .icon{
+    margin: 3px 10px;
+    padding: 5px;
+ font-size: 20px;
+
+}
+
+.catagory_search{
+    grid-column: auto / span 7;
+    display: inline-block;
+    padding: 10px;
+}
+.catagory_search input {
+    height: 20px;
+    margin: 0;
+}
+.catagory_search input[type="text"] {
+    width: 61%;
+    padding: 11px;
+    border: 0px;
+    margin: 0;
+}
+.catagory_search input[type="submit"]{
+    padding: 13px;
+    padding-bottom:29px;
+    border:none;
+    margin: 0;
+    cursor: pointer;
+}
+
+.shop_toly{
+    grid-column: auto/span 1;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+#cars, #Country{
+    padding: 13px 5px;
+    border: none;
+    margin: 0;
+}
+/*================== menu ======================*/
+
+.menu_all{
+    grid-column: auto/ span 1;
+    text-align: center;
+    background: #232F3E;
+}
+
+.menu_all i{
+       padding: 10px;
+   
+    }
+.menu_all i:hover{
+    outline: 1px solid white;
+     }
+
+
+.menu_ul{
+    grid-column: auto / span 7;
+    padding: 0;
+    background: #232F3E;
+}
+.menu_ul ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+.shop{
+    grid-column: auto/ span 4;
+   text-align: center;
+   background: #232F3E;
+}
+.shop li{
+    list-style: none;
+    margin: 10px;
+}
+.shop li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu_ul ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+
+}
+.menu_ul ul li a{
+    text-decoration: none;
+    color: white;
+   
+}
+.menu_ul ul li:hover{
+    outline: 1px solid white;
+
+}
+#all {
+    background: none;
+    color:wheat;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+
+
+
+/*===================== left_slider=====================*/
+
+#side_menu{
+    position: absolute;
+    background: rgba(28, 33, 53, 0.5);
+    width: 300px;
+   height: 100vh;
+   left:-400px;
+   transition: .5s;
+   z-index: 10;
+
+}
+#side_menu.active{
+    left: 0;
+}
+
+
+#side_menu ul {
+    margin:0;
+    color: white;
+    
+}
+#side_menu ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    
+}
+#side_menu ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+.close{
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+     margin: 5px;
+    color:white;
+}
+.close:hover{
+   outline:1px solid white;
+}
+/*========== Slider =====================*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .slider-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .slider-arrow-left {
+    left: 0;
+  }
+  
+  .slider-arrow-right {
+    right: 0;
+  }
+  
+
+
+
+
+/*=========== 4 column =========*/
+.four_column{
+    grid-column: auto/span 3;
+    margin: 10px;
+    height: 400px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.four_column img{
+    width: 100%;
+    object-fit: cover;
+    height: 330px;
+    
+}
+.four_column h3{
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.four_column a{
+    cursor: pointer;
+    color: green;
+
+}
+.four_column a:hover{
+    font-weight: bold;
+
+}
+/*======================== scroll Slider ==============*/
+
+.wrap{
+  margin: 10px;
+}
+.scrollbar, .scrollbar2 {
+  margin: 0;
+  width: 100%;
+  height: 4px;
+  line-height: 0;
+  position: relative;
+  background-color: #ccc;
+ 
+  
+}
+
+.handle {
+  width: 100px;
+  height: 100%;
+  background: red;
+  cursor: pointer;
+  height: 4px;
+}
+
+.mousearea {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 50px;
+}
+.clearfix li {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+  }
+.clearfix li {
+  float: left;
+  
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  color: #3a3c47;
+  text-align: center;
+  cursor: pointer;
+}
+.clearfix img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.prevPage, .prevPage2{
+    padding: 30px 10px;
+  position: absolute;
+  left: 10px;
+  margin-top:6%
+  
+
+  
+}
+.nextPage, .nextPage2{
+    padding: 30px 10px;
+  position: absolute;
+  right: 10px;
+  margin-top:6%
+
+}
+
+/*=========== back to top===============*/
+.back_to_top{
+    text-align: center;
+    background: #2e3d50;
+    padding: 10px;
+}
+
+.back_to_top li{
+    list-style: none;
+}
+.back_to_top li a{
+    text-decoration: none;
+    color: white;
+}
+/*=========== footer up=========== */
+.footer_up{
+    padding:50px;
+}
+.footer_up{
+    background: #232F3E;
+}
+.four_column_footer{
+    grid-column: auto/span 2.5;
+    margin: 0 10px;
+    line-height: 30px;
+}
+.four_column_footer li{
+    list-style: none;
+   
+}
+
+.four_column_footer li a{
+    text-decoration: none;
+    color: #ddd;
+
+}
+.four_column_footer label{
+    color:white;
+}
+
+
+/*-------Dollar Cantry Area-------------*/
+
+.amazon_dollar_area{
+    display: flex;
+    text-align: center;
+    background: #232F3E;
+    border-top: 1px solid #7e7d7d;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.amazon_dollar_area a{
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    border: 1px solid #ddd;
+    margin: 10px 10px;
+}
+.amazon_dollar_area li a {
+    border: none;
+    padding-right: 50px;
+    font-size: 30px;
+    
+    
+}
+.amazon_dollar_area li  {
+    
+    list-style: none;
+}
+.amazon_dollar_area span  {
+   padding: 0 10px;
+   color: rgb(240, 127, 127)
+}
+#Country_name{
+    padding: 10px;
+    background: #232F3E ;
+    color:#ddd;
+    font-size: 15px;
+ 
+}
+
+
+/*========================== Footer 2================*/
+.footer_2{
+   padding: 50px 0px 50px 50px;
+    background: #131A22;
+  
+}
+.all_link{
+    grid-column: auto/span 2;
+    padding: 10px 5px;
+}
+.all_link a{
+    text-decoration: none;
+    color:#727171
+}
+.all_link a:hover{
+    text-decoration: underline;
+    color: white;
+   
+}
+/*=====================footer======================*/
+.footer {
+    text-align: center;
+    background: #131A22;
+    margin: 0;
+    padding: 20px;
+}
+.privacy ul {
+   margin: 0;
+}
+.privacy ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.privacy ul li a{
+    text-decoration: none;
+    color:#aaa8a8;
+  
+}
+.privacy ul li a:hover{
+   text-decoration: underline;
+   color:white;
+}
+
+.copyright{
+    color: #aaa8a8;
+}
+
+
+
+
+@media (max-width: 720px) {
+/*---=============--- menu responsive-=============---*/
+.top_menu{
+    text-align: center;
+} 
+
+.menu_all{
+        grid-column: 1/ span 1;
+        grid-row: 1;
+        margin: 10px 0;
+
+       }
+    
+       .logo{
+        grid-column: 2/span 1;
+        grid-row: 1;
+        
+    
+    }
+    .shop_toly{
+        grid-column: 3/span 1;
+        grid-row: 1;
+        text-align: center;
+        font-size: 20px;
+       
+    }
+   
+    .icon_country{
+       display: none;
+     
+    }
+    .catagory_search{
+        grid-column: 1 / span 12;
+        grid-row: 2;
+        display: inline-block;
+        padding: 10px;
+        padding: 0;
+    }
+    .catagory_search input[type="text"] {
+        width: 70%;
+       
+       }
+
+
+    .menu_ul{
+        grid-column: auto / span 12;
+        padding: 3;
+     }
+     .menu_ul ul{
+        margin:0;
+        padding: 0;
+     }
+     .menu_ul ul li{
+        margin:0;
+        padding: 5px;
+     }
+     .menu_ul ul li a{
+         font-size: 75%;
+    }
+    #cars, #Country{
+       display: none;
+    }
+    .shop{
+        display: none;
+    }
+
+    #side_menu{
+       width: 100%;
+       top:5%
+      
+    }
+/*===== amazon logo======*/
+.amazon_dollar_area{
+    display: grid;
+}
+
+
+/*================== footer 2 =====*/
+
+.footer_2{
+    padding: 20px;
+}
+.all_link{
+    grid-column: auto/span 1;
+}
+
+
+
+
+/*--------------------------------*/
+    }
+
+    
