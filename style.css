@@ -396,6 +396,15 @@ body{
     color: #ddd;
 
 }
+
+.four_column_footer li a{
+    text-decoration: none;
+    color:#b3b3b3
+}
+.four_column_footer li a:hover{
+    text-decoration: underline;
+    color:white
+}
 .four_column_footer label{
     color:white;
 }
